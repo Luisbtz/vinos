@@ -1,0 +1,378 @@
+@font-face {
+  font-family: "Bauer Bodoni Std 1";
+  src: url("//db.onlinewebfonts.com/t/662a8dcc4d4ff7cad3314486a4a6e48c.eot");
+  src: url("//db.onlinewebfonts.com/t/662a8dcc4d4ff7cad3314486a4a6e48c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/662a8dcc4d4ff7cad3314486a4a6e48c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/662a8dcc4d4ff7cad3314486a4a6e48c.woff") format("woff"), url("//db.onlinewebfonts.com/t/662a8dcc4d4ff7cad3314486a4a6e48c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/662a8dcc4d4ff7cad3314486a4a6e48c.svg#Bauer Bodoni Std 1") format("svg"); }
+
+@font-face {
+  font-family: "Sharp Sans No1 Semibold";
+  src: url("//db.onlinewebfonts.com/t/d746f11d11dd01067a58e13b965e23c7.eot");
+  src: url("//db.onlinewebfonts.com/t/d746f11d11dd01067a58e13b965e23c7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d746f11d11dd01067a58e13b965e23c7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d746f11d11dd01067a58e13b965e23c7.woff") format("woff"), url("//db.onlinewebfonts.com/t/d746f11d11dd01067a58e13b965e23c7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d746f11d11dd01067a58e13b965e23c7.svg#Sharp Sans No1 Semibold") format("svg"); }
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+body {
+  background-color: white;
+  font-size: 10pt;
+  line-height: 1.6;
+  font-family: 'Bauer Bodoni Std 1';
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+::selection {
+  background: #F59E9F; }
+
+::-moz-selection {
+  background: #F59E9F; }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: #F59E9F; }
+
+a {
+  color: #0074D9;
+  text-decoration: none;
+  outline: 0; }
+  a:hover, a:focus {
+    color: #40a6ff; }
+
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  font-weight: bold; }
+
+.gigantic {
+  font-size: 110px;
+  line-height: 1.09;
+  letter-spacing: -2px; }
+
+.huge, h1 {
+  font-size: 68px;
+  line-height: 1.05;
+  letter-spacing: -1px; }
+
+.large, h2 {
+  font-size: 42px;
+  line-height: 1.14; }
+
+.bigger, h3 {
+  font-size: 26px;
+  line-height: 1.38; }
+
+.big, h4 {
+  font-size: 22px;
+  line-height: 1.38; }
+
+.small, small {
+  font-size: 10px;
+  line-height: 1.2; }
+
+p {
+  margin: 0 0 20px 0; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0; }
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .button:hover, .button:active, .button:focus,
+  button:hover,
+  button:active,
+  button:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="button"]:hover,
+  input[type="button"]:active,
+  input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0; }
+
+section.landing .top {
+  text-align: center;
+  width: 100%;
+  height: 67vh;
+  background: url(../img/uvas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  section.landing .top .overlay {
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 33%;
+    background: black; }
+  section.landing .top .text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto; }
+    section.landing .top .text h1 {
+      font-family: 'Bauer Bodoni Std 1';
+      font-weight: lighter;
+      color: white;
+      text-transform: uppercase;
+      font-size: 5.1em;
+      margin: 0;
+      padding: 0; }
+    section.landing .top .text h3 {
+      font-weight: lighter;
+      color: white;
+      font-size: 2.7em;
+      text-transform: uppercase; }
+
+section.landing .bottom {
+  text-align: center;
+  width: 100%;
+  height: 33vh; }
+  section.landing .bottom .center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; }
+    section.landing .bottom .center img {
+      width: 230px;
+      margin-bottom: 10px; }
+    section.landing .bottom .center h6 {
+      font-size: 1.2em;
+      font-weight: lighter;
+      letter-spacing: 6px;
+      margin: 0;
+      padding: 0; }
+
+section.landing .links {
+  font-family: "Sharp Sans No1 Semibold";
+  font-weight: lighter;
+  font-size: .7em; }
+  section.landing .links .left {
+    position: absolute;
+    bottom: 20px;
+    left: 20px; }
+  section.landing .links .right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+    section.landing .links .right span {
+      padding-left: 10px; }
+    section.landing .links .right a {
+      color: black;
+      padding-left: 10px; }
