@@ -1,5 +1,6 @@
 section.landing
   .top
+    position: relative
     text-align: center
     width: 100%
     height: 67vh
@@ -7,19 +8,28 @@ section.landing
     background-repeat: no-repeat
     background-position: center
     background-size: cover
+    img
+      display: block
+      left: 50%
+      transform: translateX(-50%)
+      text-align: center
+      position: absolute
+      bottom: -50px
+      width: 100px
     .overlay
       opacity: .2
       position: absolute
       top: 0
       left: 0
       right: 0
-      bottom: 33%
+      bottom: 0%
       background: black
     .text
       position: relative
       top: 50%
       transform: translateY(-50%)
       margin: auto
+
       h1
         font-family: 'Bauer Bodoni Std 1'
         font-weight: lighter
@@ -36,6 +46,8 @@ section.landing
         font-size: 2.7em
         text-transform: uppercase
 
+
+
   .bottom
     text-align: center
     width: 100%
@@ -46,15 +58,7 @@ section.landing
       transform: translateY(-50%)
       text-align: center
 
-      img
-        position: relative
-        top: -75px
-        width: 100px
-        margin-bottom: 10px
-
       h6
-        position: relative
-        top: -55px
         font-size: 1.2em
         font-weight: lighter
         letter-spacing: 6px
@@ -101,6 +105,31 @@ section.landing
     h3
       font-size: 1.8em !important
       padding: 0 80px !important
+
+    .links
+      font-family: "Sharp Sans No1 Semibold"
+      font-weight: lighter
+      font-size: .9em
+
+      .right
+        display: block
+        padding: 0 !important
+        margin: 0  auto !important
+        text-align: center
+        color: white
+        position: absolute
+        top: 20px
+        left: 50% !important
+        -webkit-transform: translateX(-50%)
+        transform: translateX(-50%)
+
+        a
+          color: white !important
+
+      .left
+        text-align: center
+        left: 50% !important
+        transform: translateX(-50%) !important
 
 
 @media(max-width: 333px)
